@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Penglaris Mie Ayam</a>
+
+      <nav>
+        <a href="#" class="active"> Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Lokasi</a>
+        <a href="#">Daftar Harga</a>
+
+      </nav>
+    </header>
+    <section class="home">
+      <div class="home-img">
+        <img src="/Portofolio/image/ayak.jpeg" alt="" />
+      </div>
+      <div class="home-content">
+        <h1>HAI AKU FANS MIE AYAM NOMER 1 <span></span></h1>
+        <h3 class="typing-text">Aku bukan pewaris, aku juga bukan perintis, tapi aku PENGLARIS MIE AYAM <span></span></h3>
+        <p>
+          Kalau hidup kalian acakadul, pergilah dari rumah dan datangi penjual mie ayam terdekat, selagi Bakul Mie Ayam "BUKA"
+          Semua masalah bisa teratasi tapi nek Bakul Mie Ayam "TUTUP" semua masalah akan terbawahi.
+          Jangan lupa untuk dahar Mie Ayam . Salam Mie Ayam
+        
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/lejenooo/lejenooo.github.io"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <a href="#" class="btn">Click</a>
+      </div>
+    </section>
+  </body>

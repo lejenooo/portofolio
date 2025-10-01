@@ -1,0 +1,154 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f1dada; /* latar belakang gelap */
+  color: #790404;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(100, 80, 80, 0.6);
+  backdrop-filter: blur(6px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #640000; /* kuning ala Wall-E */
+  text-decoration: none;
+  letter-spacing: 2px;
+  
+}
+
+nav a {
+  color: #f08686;
+  margin-left: 25px;
+  font-size: 1rem;
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s;
+}
+
+nav a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #e79a9a; /* biru neon */
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+/* Home Section */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 120px 10% 50px;
+  min-height: 100vh;
+  gap: 2rem;
+}
+
+.home-img img {
+  width: 280px;
+  border-radius: 10%;
+  border: 4px 
+  box-shadow: 0 0 25px #ffffff, 0 0 50px #925e5e;
+  animation: float0s ease-in-out infinite;
+}
+
+/* Animasi floating */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+.home-content {
+  flex: 1 1 400px;
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.home-content h1 span {
+  color: #fa3b3b;
+
+}
+
+.typing-text {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #994d4d;
+  min-height: 35px;
+}
+
+/* Paragraf */
+.home-content p {
+  max-width: 550px;
+  margin-bottom: 20px;
+  color: #740606;
+}
+
+/* Social Icons */
+.social-icons {
+  margin: 15px 0;
+}
+
+.social-icons a {
+  color: #660303;
+  font-size: 1.3rem;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff9595;
+  transform: scale(1.2);
+  text-shadow: 0 0 10px #f78888;
+}
+
+/* Tombol */
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #f58181;
+  color: #9e2c2c;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0 0 15px #913e3e;
+}
+
+.btn:hover {
+  background: hsl(0, 40%, 44%);
+  box-shadow: 0 0 25px #b35353, 0 0 40px #9b3535;
+}
